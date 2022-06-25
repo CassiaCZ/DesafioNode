@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   Promocao.init({
     nome: DataTypes.STRING,
     descricao: DataTypes.STRING,
-    validade: DataTypes.STRING,
+    validade: DataTypes.DATEONLY,
     EmpresaId: DataTypes.INTEGER
   }, {
     sequelize,
